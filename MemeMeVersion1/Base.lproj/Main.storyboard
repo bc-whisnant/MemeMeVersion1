@@ -22,35 +22,51 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-I4-7QV">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Share" id="MZB-xj-hsM"/>
+                                    <barButtonItem title="Share" id="MZB-xj-hsM">
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="BYZ-38-t0r" id="Td0-Fl-bgI"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="242" style="plain" systemItem="fixedSpace" id="6hb-vH-Qc8"/>
-                                    <barButtonItem title="Cancel" id="7Jm-tJ-6qK"/>
+                                    <barButtonItem title="Cancel" id="7Jm-tJ-6qK">
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="BYZ-38-t0r" id="DgB-Cd-Pkn"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Top Text Field" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gR6-PA-oqd">
+                                <rect key="frame" x="16" y="128" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m8M-6d-Whq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-ZC-5ZT">
                                 <rect key="frame" x="0.0" y="88" width="375" height="542"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-mw-DfG">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Camera" id="In5-8t-R5a"/>
+                                    <barButtonItem title="Camera" id="In5-8t-R5a">
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="BYZ-38-t0r" id="we4-1k-2So"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="229" style="plain" systemItem="fixedSpace" id="aIi-CX-0Yu"/>
-                                    <barButtonItem title="Album" id="eti-5q-ci6"/>
+                                    <barButtonItem title="Album" id="eti-5q-ci6">
+                                        <connections>
+                                            <action selector="libraryButtonPressed:" destination="BYZ-38-t0r" id="M04-Wg-i5J"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bottom Text Field" placeholder="Bottom Text Field" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GmR-CV-heP">
                                 <rect key="frame" x="16" y="539" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0WM-cL-oCS"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Top Text Field" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gR6-PA-oqd">
-                                <rect key="frame" x="16" y="128" width="343" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="m8M-6d-Whq"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -78,6 +94,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomTextField" destination="GmR-CV-heP" id="xOK-HW-J8a"/>
+                        <outlet property="cameraButton" destination="In5-8t-R5a" id="RI5-Wr-nBy"/>
+                        <outlet property="cancelButton" destination="7Jm-tJ-6qK" id="ZNI-ls-bBA"/>
+                        <outlet property="libraryButton" destination="eti-5q-ci6" id="4cg-mp-Bp6"/>
+                        <outlet property="pickedImageView" destination="x2x-ZC-5ZT" id="hFK-MK-HOU"/>
+                        <outlet property="shareButton" destination="MZB-xj-hsM" id="EY4-np-2IO"/>
+                        <outlet property="topTextField" destination="gR6-PA-oqd" id="izs-oB-GwA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
