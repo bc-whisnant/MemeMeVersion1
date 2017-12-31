@@ -15,6 +15,7 @@
 		BF4606311FF8604D008BB249 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF46062E1FF8604C008BB249 /* camera-icon.png */; };
 		BF4606321FF8604D008BB249 /* album-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF46062F1FF8604C008BB249 /* album-icon.png */; };
 		BF4606331FF8604D008BB249 /* share-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4606301FF8604D008BB249 /* share-icon.png */; };
+		BF4606351FF9697B008BB249 /* MemeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4606341FF9697B008BB249 /* MemeStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BF46062E1FF8604C008BB249 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
 		BF46062F1FF8604C008BB249 /* album-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album-icon.png"; sourceTree = "<group>"; };
 		BF4606301FF8604D008BB249 /* share-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-icon.png"; sourceTree = "<group>"; };
+		BF4606341FF9697B008BB249 /* MemeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BF46062F1FF8604C008BB249 /* album-icon.png */,
 				BF46062E1FF8604C008BB249 /* camera-icon.png */,
 				BF4606301FF8604D008BB249 /* share-icon.png */,
+				BF4606341FF9697B008BB249 /* MemeStruct.swift */,
 			);
 			path = MemeMeVersion1;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF46061F1FF85985008BB249 /* ViewController.swift in Sources */,
+				BF4606351FF9697B008BB249 /* MemeStruct.swift in Sources */,
 				BF46061D1FF85985008BB249 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
