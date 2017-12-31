@@ -12,6 +12,9 @@
 		BF4606221FF85985008BB249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4606201FF85985008BB249 /* Main.storyboard */; };
 		BF4606241FF85985008BB249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4606231FF85985008BB249 /* Assets.xcassets */; };
 		BF4606271FF85985008BB249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4606251FF85985008BB249 /* LaunchScreen.storyboard */; };
+		BF4606311FF8604D008BB249 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF46062E1FF8604C008BB249 /* camera-icon.png */; };
+		BF4606321FF8604D008BB249 /* album-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF46062F1FF8604C008BB249 /* album-icon.png */; };
+		BF4606331FF8604D008BB249 /* share-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4606301FF8604D008BB249 /* share-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BF4606231FF85985008BB249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4606261FF85985008BB249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF4606281FF85985008BB249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF46062E1FF8604C008BB249 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		BF46062F1FF8604C008BB249 /* album-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album-icon.png"; sourceTree = "<group>"; };
+		BF4606301FF8604D008BB249 /* share-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				BF4606231FF85985008BB249 /* Assets.xcassets */,
 				BF4606251FF85985008BB249 /* LaunchScreen.storyboard */,
 				BF4606281FF85985008BB249 /* Info.plist */,
+				BF46062F1FF8604C008BB249 /* album-icon.png */,
+				BF46062E1FF8604C008BB249 /* camera-icon.png */,
+				BF4606301FF8604D008BB249 /* share-icon.png */,
 			);
 			path = MemeMeVersion1;
 			sourceTree = "<group>";
@@ -124,7 +133,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4606271FF85985008BB249 /* LaunchScreen.storyboard in Resources */,
+				BF4606321FF8604D008BB249 /* album-icon.png in Resources */,
+				BF4606311FF8604D008BB249 /* camera-icon.png in Resources */,
 				BF4606241FF85985008BB249 /* Assets.xcassets in Resources */,
+				BF4606331FF8604D008BB249 /* share-icon.png in Resources */,
 				BF4606221FF85985008BB249 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
