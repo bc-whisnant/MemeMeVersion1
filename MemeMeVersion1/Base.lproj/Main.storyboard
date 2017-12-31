@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,30 +19,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-ZC-5ZT">
-                                <rect key="frame" x="0.0" y="44" width="375" height="586"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-mw-DfG">
-                                <rect key="frame" x="0.0" y="630" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Camera" id="In5-8t-R5a"/>
-                                    <barButtonItem width="229" style="plain" systemItem="fixedSpace" id="aIi-CX-0Yu"/>
-                                    <barButtonItem title="Album" id="eti-5q-ci6"/>
-                                </items>
-                            </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-I4-7QV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-I4-7QV">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="Share" id="MZB-xj-hsM"/>
                                     <barButtonItem width="242" style="plain" systemItem="fixedSpace" id="6hb-vH-Qc8"/>
                                     <barButtonItem title="Cancel" id="7Jm-tJ-6qK"/>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-ZC-5ZT">
+                                <rect key="frame" x="0.0" y="88" width="375" height="542"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-mw-DfG">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Camera" id="In5-8t-R5a"/>
+                                    <barButtonItem width="229" style="plain" systemItem="fixedSpace" id="aIi-CX-0Yu"/>
+                                    <barButtonItem title="Album" id="eti-5q-ci6"/>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bottom Text Field" placeholder="Bottom Text Field" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GmR-CV-heP">
+                                <rect key="frame" x="16" y="539" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0WM-cL-oCS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Top Text Field" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gR6-PA-oqd">
+                                <rect key="frame" x="16" y="128" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m8M-6d-Whq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x2x-ZC-5ZT" firstAttribute="leading" secondItem="N9f-mw-DfG" secondAttribute="leading" id="3k0-Bm-8Vn"/>
+                            <constraint firstItem="gR6-PA-oqd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9bo-P4-Bl6"/>
+                            <constraint firstItem="N9f-mw-DfG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AXK-oR-TAs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x2x-ZC-5ZT" secondAttribute="bottom" constant="37" id="EUL-TX-Ycl"/>
+                            <constraint firstItem="x2x-ZC-5ZT" firstAttribute="trailing" secondItem="N9f-mw-DfG" secondAttribute="trailing" id="Ghw-UK-nk0"/>
+                            <constraint firstItem="gK3-I4-7QV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gi7-OW-EbF"/>
+                            <constraint firstItem="gK3-I4-7QV" firstAttribute="trailing" secondItem="x2x-ZC-5ZT" secondAttribute="trailing" id="IpG-KG-ToM"/>
+                            <constraint firstItem="gR6-PA-oqd" firstAttribute="leading" secondItem="GmR-CV-heP" secondAttribute="leading" id="Q9M-Ct-zfm"/>
+                            <constraint firstItem="N9f-mw-DfG" firstAttribute="top" secondItem="GmR-CV-heP" secondAttribute="bottom" constant="44" id="Wta-sA-Mwd"/>
+                            <constraint firstItem="gR6-PA-oqd" firstAttribute="trailing" secondItem="GmR-CV-heP" secondAttribute="trailing" id="dAx-49-IkN"/>
+                            <constraint firstItem="gK3-I4-7QV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="k0U-V7-ACT"/>
+                            <constraint firstItem="gK3-I4-7QV" firstAttribute="leading" secondItem="x2x-ZC-5ZT" secondAttribute="leading" id="kkD-nJ-CnX"/>
+                            <constraint firstItem="x2x-ZC-5ZT" firstAttribute="top" secondItem="gK3-I4-7QV" secondAttribute="bottom" id="mjU-ok-oCZ"/>
+                            <constraint firstItem="gR6-PA-oqd" firstAttribute="top" secondItem="gK3-I4-7QV" secondAttribute="bottom" constant="40" id="pPV-zM-gq6"/>
+                            <constraint firstItem="gK3-I4-7QV" firstAttribute="centerX" secondItem="gR6-PA-oqd" secondAttribute="centerX" id="rSS-oL-kUq"/>
+                            <constraint firstAttribute="trailing" secondItem="gK3-I4-7QV" secondAttribute="trailing" id="rUQ-sL-QA0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
